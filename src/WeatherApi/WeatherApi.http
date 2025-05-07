@@ -1,0 +1,72 @@
+@CalculationApi_HostAddress = http://localhost:5021
+
+
+@number1=0
+GET {{CalculationApi_HostAddress}}/api/math/abs/{{number1}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/acos/{{number1}}
+
+###
+
+@number2=0
+GET {{CalculationApi_HostAddress}}/api/math/add/{{number1}}/{{number2}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/asin/{{number1}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/atan/{{number1}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/ceiling/{{number1}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/cos/{{number1}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/divide/{{number1}}/{{number2}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/floor/{{number1}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/log/{{number1}}/{{number2}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/multiply/{{number1}}/{{number2}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/power/{{number1}}/{{number2}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/round/{{number1}}/{{number2}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/sin/{{number1}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/sqrt/{{number1}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/subtract/{{number1}}/{{number2}}
+
+###
+
+GET {{CalculationApi_HostAddress}}/api/math/tan/{{number1}}
+
+###
