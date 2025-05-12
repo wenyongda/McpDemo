@@ -1,0 +1,6 @@
+@McpServerSseDemo_HostAddress = http://localhost:5169
+
+GET {{McpServerSseDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
