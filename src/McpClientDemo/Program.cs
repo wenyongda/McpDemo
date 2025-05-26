@@ -12,18 +12,21 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Xml.Linq;
 
+// stdio
 //await using IMcpClient mcpClient = await McpClientFactory.CreateAsync(new StdioClientTransport(new()
 //{
 //    Name = "city_date_weather",
 //    Command = "..\\..\\..\\..\\McpServerDemo\\bin\\Debug\\net9.0\\McpServerDemo.exe"
 //}));
 
+// sse
 //await using IMcpClient mcpClient = await McpClientFactory.CreateAsync(new SseClientTransport(new SseClientTransportOptions
 //{
 //    Name = "city_date_weather",
 //    Endpoint = new Uri("http://localhost:3001/sse")
 //}));
 
+// streamable
 await using IMcpClient mcpClient = await McpClientFactory.CreateAsync(new SseClientTransport(new SseClientTransportOptions 
 {
     Name = "city_date_weather",
