@@ -5,7 +5,7 @@ using ModelContextProtocol.Server;
 var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenLocalhost(3001);
+    options.ListenAnyIP(3001);
 });
 
 IKernelBuilder kernelBuilder = Kernel.CreateBuilder(); ;
@@ -35,7 +35,7 @@ app.Run();
 public static class McpServerBuilderExtensions
 {
     /// <summary>
-    /// 把Plugins转换成McpServerTool并添加到McpServerBuilder
+    /// 鎶奝lugins杞崲鎴怣cpServerTool骞舵坊鍔犲埌McpServerBuilder
     /// </summary>
     public static IMcpServerBuilder WithTools(this IMcpServerBuilder builder, KernelPluginCollection plugins)
     {
